@@ -9,7 +9,7 @@ import { track } from "@/lib/analytics";
 import { sendEmail } from "@/lib/send-email";
 
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { Button } from "@repo/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Heading, Paragraph } from "@/components/ui/typography";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";

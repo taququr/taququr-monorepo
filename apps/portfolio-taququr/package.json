@@ -10,6 +10,7 @@
     "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {
+    "@repo/ui": "*",
     "@hookform/resolvers": "^5.2.2",
     "@sanity/image-url": "^2.1.1",
     "@sanity/vision": "5",

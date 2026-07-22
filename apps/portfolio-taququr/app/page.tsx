@@ -9,7 +9,7 @@ import type { Project } from "@/sanity.types";
 import { allProjectsQueryHome } from "@/lib/queries";
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button } from "@repo/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import { Heading, Paragraph } from "@/components/ui/typography";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";

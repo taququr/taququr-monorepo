@@ -9,10 +9,10 @@ import type { Project } from "@/sanity.types";
 
 import { formatDate } from "@/lib/utils";
 
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import { Heading, Paragraph } from "@/components/ui/typography";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Input } from "@repo/ui/input";
+import { Badge } from "@repo/ui/badge";
+import { Heading, Paragraph } from "@repo/ui/typography";
+import { Card, CardContent, CardHeader } from "@repo/ui/card";
 import { TrackedLink } from "@/components/ui/tracked-link";
 
 interface ProjectsListProps {

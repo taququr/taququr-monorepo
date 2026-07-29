@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { urlFor } from "@/sanity/lib/image";
+import { urlFor } from "@/studio-config/lib/image";
 
 import type { Project } from "@/sanity.types";
 

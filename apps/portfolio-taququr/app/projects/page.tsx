@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 
-import { sanityFetch } from "@/sanity/lib/live";
+import { sanityFetch } from "@/studio-config/lib/live";
 import { notFound } from "next/navigation";
 
 import type { Project } from "@/sanity.types";

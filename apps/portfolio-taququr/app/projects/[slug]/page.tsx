@@ -5,9 +5,9 @@ import Image from "next/image";
 import { cache } from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { urlFor } from "@/sanity/lib/image";
-import { client } from "@/sanity/lib/client";
-import { sanityFetch } from "@/sanity/lib/live";
+import { urlFor } from "@/studio-config/lib/image";
+import { client } from "@/studio-config/lib/client";
+import { sanityFetch } from "@/studio-config/lib/live";
 
 import type { Project } from "@/sanity.types";
 

@@ -28,18 +28,17 @@ export default async function Home() {
     <div className="container mx-auto max-w-5xl py-10 px-4 space-y-4 md:space-y-10 font-sans">
       <header className="pt-20 pb-12 flex flex-col items-center text-center gap-4">
         <Heading level="h1">Taqie Fadlillah</Heading>
-        <Heading level="h4" weight="semibold" className="text-muted-foreground">
+        <Heading level="h2" preset="h4" weight="semibold" className="text-muted-foreground">
           A frontend developer passionate about building responsive and performance-optimized web applications.
         </Heading>
       </header>
 
-      {/* <h3 className="text-2xl font-bold mb-4">Work & Projects</h3> */}
-      <Heading level="h3" weight="bold" className="mb-4">
+      <Heading level="h2" preset="h3" weight="bold" className="mb-4">
         Work & Projects
       </Heading>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.length > 0 ? (
-          projects.map((project: any) => (
+          projects.map((project: Project) => (
             <Card
               key={project._id}
               className="md:col-span-1 col-span-2 border border-muted-foreground/10 hover:border-foreground/30"
@@ -51,7 +50,7 @@ export default async function Home() {
               >
                 <CardHeader>
                   <div className="flex flex-wrap gap-2 pb-2">
-                    {project.tags.map((tag: string, index: number) => (
+                    {project.tags?.map((tag: string, index: number) => (
                       <Badge
                         key={tag + index}
                         variant="sky"

@@ -48,14 +48,18 @@ const headingVariants = cva("text-balance font-heading tracking-tight transition
   },
 });
 
+const headingNames = ["h1", "h2", "h3", "h4"] as const;
+
 interface HeadingProps
   extends Omit<React.ComponentPropsWithoutRef<"h1">, "color">, VariantProps<typeof headingVariants> {
   asChild?: boolean;
+  preset?: (typeof headingNames)[number] | null;
 }
 
 function Heading({
   className,
   level = "h1",
+  preset = null,
   font = "sans",
   weight = "bold",
   color = "foreground",
@@ -64,11 +68,13 @@ function Heading({
 }: HeadingProps) {
   const Comp = (asChild ? Slot.Root : level) as React.ElementType;
 
+  const activeLevel = preset && headingNames.includes(preset) ? preset : level;
+
   return (
     <Comp
       data-slot="typography-heading"
       data-level={level}
-      className={cn(headingVariants({ level, font, weight, color }), className)}
+      className={cn(headingVariants({ level: activeLevel, font, weight, color }), className)}
       {...props}
     />
   );

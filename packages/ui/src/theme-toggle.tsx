@@ -3,7 +3,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import { Button } from "@taququr/ui";
+import { Button } from "./button";
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();

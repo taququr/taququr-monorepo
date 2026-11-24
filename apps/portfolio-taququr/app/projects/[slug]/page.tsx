@@ -15,9 +15,9 @@ import { singleProjectQuery } from "@/lib/queries";
 import { getMetricTextColor } from "@/lib/text-color";
 import { formatDate, getImageDimensions } from "@/lib/utils";
 
-import { Badge } from "@repo/ui/badge";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@repo/ui/dialog";
-import { Heading, Paragraph } from "@repo/ui/typography";
+import { Badge } from "@taququr/ui";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@taququr/ui";
+import { Heading, Paragraph } from "@taququr/ui";
 
 interface StaticProjectSlug {
   slug: string;

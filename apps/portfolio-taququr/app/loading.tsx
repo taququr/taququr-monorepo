@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader } from "@repo/ui/card";
+import { Card, CardContent, CardHeader } from "@taququr/ui";
 
 export default function GlobalLoadingSkeleton() {
   return (

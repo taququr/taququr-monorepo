@@ -2,7 +2,7 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "radix-ui";
 
-import { cn } from "@repo/ui/lib/utils";
+import { cn } from "@taququr/ui";
 
 const sharedVariants = {
   font: {

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ThemeToggle } from "@repo/ui/themeToggle";
+import { ThemeToggle } from "@taququr/ui";
 
 export function Navbar() {
   const pathname = usePathname();

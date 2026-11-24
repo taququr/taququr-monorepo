@@ -7,8 +7,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/ui/navbar";
-import { Toaster } from "@repo/ui/sonner";
 import { Footer } from "@/components/ui/footer";
+import { Toaster } from "@taququr/ui";
 
 import "./globals.css";
 

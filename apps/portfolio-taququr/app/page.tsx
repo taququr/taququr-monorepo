@@ -8,11 +8,10 @@ import type { Project } from "@/sanity.types";
 
 import { allProjectsQueryHome } from "@/lib/queries";
 
-import { Badge } from "@repo/ui/badge";
-import { Button } from "@repo/ui/button";
+import { Badge, Button } from "@taququr/ui";
+import { Heading, Paragraph } from "@taququr/ui";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@taququr/ui";
 import { TrackedLink } from "@/components/ui/tracked-link";
-import { Heading, Paragraph } from "@repo/ui/typography";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@repo/ui/card";
 
 export default async function Home() {
   const response = await sanityFetch({

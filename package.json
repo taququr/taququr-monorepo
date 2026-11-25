@@ -19,10 +19,10 @@
     "node": ">=22"
   },
   "devEngines": {
-    "packageManager": {
-      "name": "bun",
-      "version": "1.3.14"
-    }
+    "packageManager": [
+      { "name": "bun", "version": ">=1.0.0" },
+      { "name": "npm", "version": ">=9.0.0" }
+    ]
   },
   "workspaces": [
     "apps/*",

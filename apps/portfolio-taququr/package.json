@@ -14,7 +14,6 @@
     "@taququr/ui": "*",
     "@taququr/typescript-config": "workspace:*",
     "@taququr/eslint-config": "workspace:*",
-    "@taququr/tailwind-config": "workspace:*",
     "@hookform/resolvers": "^5.2.2",
     "@sanity/image-url": "^2.1.1",
     "@sanity/vision": "5",
